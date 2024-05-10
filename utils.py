@@ -8,9 +8,9 @@ from email.utils import formataddr
 
 
 def email(title, content):
-    sender = 'llx965116991@163.com'
-    pwd = 'IFAEFWAQGLBMANPU'
-    receiver = '965116991@qq.com'
+    sender = 
+    pwd = 
+    receiver = 
     try:
         msg = MIMEText(content, 'plain', 'utf-8')
         msg['From'] = formataddr(["DDP_GPU", sender])
