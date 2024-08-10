@@ -7,7 +7,7 @@ This is the repository for our paper (ICIC2024).
 
 ```shell
 TSMGAN-II
-	AudioData.py # Define the dataset class
+    AudioData.py # Define the dataset class
     checkpoint.py # Define the checkpoint class
     config.py # Define the training environment
     discriminator.py # Define the discriminator
@@ -16,7 +16,7 @@ TSMGAN-II
     model_trainer.py # Define training method
     utils.py # Define utils function
 Dataset
-	generalization_experiment # Dataset for generalization experiment  
+    generalization_experiment # Dataset for generalization experiment  
 conference_accepted.pdf # Final conference Paper
 ```
 
@@ -37,6 +37,16 @@ h5py
 pesq
 pystoi
 ```
+
+## Dataset
+
+### VoiceBank+Demand dataset
+
+Download from https://datashare.ed.ac.uk/handle/10283/2791
+
+### Dataset for generalization experiment (uploaded)
+
+In the generalization experiment, we constructed three test sets to evaluate the  model performance for varying noise conditions. The first set, designed for noise environment matching, comprised 800 clean utterances from the VoiceBank+DEMAND  test set, combined with 4 unseen noises (DLIVING, OMEETING, SPSQUARE, TBUS  noise) from the DEMAND dataset. The second set, for noise environment mismatch,  includes the same 800 clean utterances, mixed with two unseen noises (factory1 and  babble noise) from the NOISEX-92 dataset3 . Lastly, the channel environment mismatch  test set contains 800 clean utterances from TIMIT4 , mixed with two unseen noises (factory1 and babble noise). Each dataset is mixed at SNRs of 0, 6, 12 and 18 dB with 200  utterances per SNR level. 
 
 ## How to start
 
